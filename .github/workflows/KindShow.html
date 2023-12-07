@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KindShow</title>
+	<style type="text/css">
+		body{
+				background-color: rgba(158,225,240,0.40);
+				width: 1500px;
+				height: 1400px;
+				position: absolute;
+			margin: auto;
+			left: 0px;
+			right: 0px;
+			}
+		.container{width: 1300px;height: 1500px;margin-left: 150px;}
+		.main{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+		}
+		.d1{
+			margin-left: 10px;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			padding-top: 5px;
+		}
+		.d2{
+				width: 210px;
+				height: 55px;
+				font-size: 40px;
+				/*color: antiquewhite;*/
+				font-style: italic;
+				text-shadow: 2px 2px 2px;
+				margin-left: 100px;
+				margin-top: -70px;
+				
+		}
+		.d3{
+			width: 230px;
+			height: 50px;
+			margin-left: 1100px;
+			margin-top: -45px;
+		}
+		.sousuo{
+			font-family: 新宋体;
+			font-size: 16px;
+			text-align: left;
+			line-height: 25px;
+			width: 200px;
+			border: none;
+			float: left;
+		}
+		.main2{
+			width: 1200px;
+			height: 50px;
+			font-weight: bold;
+			line-height: 50px;
+			text-align: center;
+			margin-left: 20px;
+		}
+		.u1{
+			list-style-type: none;
+			position: relative;right: 40px;
+		  }
+		.u1 li{
+			float: left;
+			width: 145px;
+		  }
+		 .u1 li a:link{
+						text-decoration: none;
+						color:black;
+			 			display: block;
+			 			font-family: 仿宋;
+			 			font-size: 25px;
+		             }
+		.u1 li a:hover{
+				background-color:#5096AD;
+				color: aliceblue;
+		}
+		.main3{
+			width: 1200px;
+			height: 360px;
+			background-color: lightblue;
+			margin-top: -40px;
+		}
+		.d4{
+			width: 400px;
+			height: 200px;
+			margin-left: 30px;
+			position: relative;top: 60px;
+			text-align: center;
+		}
+		.p1{ width: 325px;
+			height: 60px;
+			font-family: 黑体;
+			font-size: 50px;
+			border-bottom: medium solid #000000;
+		}
+		.p2{ 
+			width: 290px;
+			height: 35px;
+			font-family: 楷体;
+			font-size: 25px;
+			border-bottom: thin solid #000000;
+			margin-left: 15px;
+		}
+		.d5{
+			width: 550px;
+			height: 300px;
+			margin-left: 600px;
+			margin-top: -180px;
+		}
+		.main4{
+			width: 300px;
+			height: 800px;
+			background-color:lightblue;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+			position: relative;top: 20px;
+		}
+		.u2{list-style-type: none;
+			width: 300px;
+			margin-left: -40px;
+		}
+		.li1{
+			font-family: 新宋体;
+			font-weight: bold;
+			font-size: 30px;
+			background-color: lightcyan;
+			position: relative;bottom: 17px;
+		}
+		.li2{
+			width: 300px;
+			height: 305px;
+			position: relative;bottom: 10px;
+			font-family: 宋体;
+			font-size: 20px;
+		}
+		.li3{width: 300px;height:  130px;font-family: 宋体;font-size: 20px;position: relative;bottom: 10px;}
+		.li4{width: 300px; height: 320px; font-family: 宋体;font-size: 20px;position: relative;bottom: 10px;}
+		.main5{
+			width: 520px;
+			height: 630px;
+			margin-left: 350px;
+			margin-top: -798px;
+			background-color:lightblue;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+			position: relative;top: 20px;
+			text-align: center;
+		}
+		.show{
+			font-family: 宋体;
+			font-weight: bold;
+			font-size: 35px;
+			
+		}
+		.time{
+			width: 125px;
+			font-family: 新宋体;
+			font-size: 20px;
+			border-bottom:medium solid #FDFDFD;
+		}
+		.t2 a:link{text-decoration: none;color: black;opacity: 1.0;}
+		.t2 a:hover{text-decoration: underline;color: #54A0B8;opacity: 0.5;}
+		.main6{
+			width: 522px;
+			height: 160px;
+			background:#FBFBFB;
+			margin-left: 350px;
+			position: relative;top: 22px;
+			background-image: url(../images/mao18.jpg);
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+		}
+		.main7{
+			width: 300px;
+			height: 800px;
+			background: #FFFFFF;
+			margin-left: 900px;
+			margin-top: -800px;
+		}
+		.d6{
+			width: 300px;
+			height: 230px;
+		}
+		.T{
+			width: 280px;
+			height: 50px;
+			background-color: lightblue;
+			border-radius:20px;
+			font-family: 宋体;
+			font-weight: bold;
+			font-size: 25px;
+		}
+		.wenzi{
+			width: 280px;
+			height: 150px;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+			font-family: 宋体;
+			font-size: 20px;
+			position: relative;left: 5px;
+		}
+		.more{
+			font-weight: bold;
+			position: relative;top: 5px;
+			position: relative;left: 210px;
+		}
+		.d6 a:link{text-decoration: none; color: black;}
+		.d6 a:hover{color:lightblue;text-decoration: underline; }
+		.d7{
+			width: 300px;
+			height: 130px;
+			background-color: #54A0B8;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px lightblue;
+			position: relative;top: 25px;
+		}
+		.Q{
+			width: 280px;
+			height: 50px;
+			background-color: lightblue;
+			border-radius:20px;
+			font-family: 宋体;
+			font-weight: bold;
+			font-size: 25px;
+			position: relative;bottom: 20px;
+		}
+		.kuang{
+			width: 280px;
+			height: 30px;
+			position: relative;bottom: 20px;
+			position: relative;left: 10px;
+		}
+		.d8{
+			width: 300px;
+			height: 380px;
+			background-color: lightcyan;
+			border-radius:25px;
+			position: relative;top: 30px;
+		}
+		.H{
+			width: 280px;
+			height: 50px;
+			background-color: lightblue;
+			border-radius:20px;
+			font-family: 宋体;
+			font-weight: bold;
+			font-size: 25px;
+		}
+		.u3{
+			font-family: 新宋体;
+			font-size: 25px;
+		}
+		.u3 a:link{text-decoration: none;color: black;}
+		.u3 a:hover{text-decoration: underline;background-color: lightblue;color:aliceblue;}
+		
+		
+		.tr1{width: 300px;height: 30px;}
+		.page a:link{text-decoration: none; color: black;}
+		.page a:hover{color: #54A0B8;}
+		.page{
+			width: 300px;
+			height: 30px;
+			margin-left: 980px; 
+			position: relative;top: 80px;
+			text-align: center;
+		}
+		
+		.last{width: 600px;height: 65px;position: relative;left: 450px;}
+		.main8{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid #54A0B8;
+			box-shadow: 3px 5px 3px #54A0B8;
+			position: relative;top: 50px;
+			font-family: 仿宋;
+			font-weight: bold;
+			font-size: 15px;
+			text-align: center;
+			margin-top: -130px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="main">
+		<div class="d1">
+			<img src="images/tbmao5.png" width="70">
+		</div>
+		<div class="d2">
+			喵喵星球网
+		</div>
+		<div class="d3">
+			<form action="#" method="post">
+				<input type="search" value="搜索" class="sousuo">
+				<img src="images/tubiao5.png" width="30" height="30">
+			</form>
+		</div>
+	</div>
+<div class="container">
+	<div class="main2">
+		<ul class="u1">
+			<li><a href="index.html">喵星首页&nbsp;/</a></li>
+			<li><a href="MaoQiYuan.html">猫种起源&nbsp;/</a></li>
+			<li><a href="KindShow.html">种类展示&nbsp;/</a></li>
+			<li><a href="XingTaiTeZheng.html">形态特征&nbsp;/</a></li>
+			<li><a href="ShengHuoXiXing.html">生活习性&nbsp;/</a></li>
+			<li><a href="WeiYang.html">喂养方式&nbsp;/</a></li>
+			<li><a href="ChuShou.html">猫咪出售&nbsp;/</a></li>
+			<li><a href="Zhuce.html">登录注册&nbsp;/</a></li>
+		</ul>
+	</div>
+	<div class="main3">
+		<div class="d4">
+			<p class="p1">WELCOME TO</p>
+			<p class="p2">the Cats Kind Show</p>
+		</div>
+		<div class="d5">
+			<table class="t1" width="550" height="300" border="1" bordercolor="#FFFFFF">
+				<tr>
+					<td rowspan="2" valign="top"><img src="images/mao14.jpg" width="220" height="310"></td>
+					<td colspan="2" valign="bottom"><img src="images/mao10.jpg" width="330" height="120"></td>
+				</tr>
+				<tr>
+					<td align="left" valign="top"><img src="images/mao12.jpg" width="165" height="180"></td>
+					<td align="left" valign="top"><img src="images/mao13.jpg" width="160" height="180"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="main4">
+		<ul class="u2">
+			<li class="li1">&nbsp;<img src="images/tubiao7.png" width="30">主要品种</li>
+			<li class="li2">&nbsp;猫咪的品种很多，有喜马拉雅猫、英短、美短、折耳猫、伯曼猫、波斯猫、暹罗猫、东方短毛猫、布偶猫、加菲猫、挪威森林猫、孟买猫、缅甸猫、埃及猫、孟加拉猫、日本短尾猫、卷毛猫、曼岛猫、哈瓦那猫、俄罗斯蓝猫、科来特猫、卡尔特猫、美国卷耳猫、西伯利亚猫、新加坡猫、金吉拉猫、安哥拉猫、韦尔斯猫、土耳其梵猫、虎斑猫、山东狮子猫、中华田园猫、加拿大无毛猫、长毛猫、马恩岛猫等等。</li>
+			<li class="li1">&nbsp;<img src="images/tubiao7.png" width="30">国内品种</li>
+			<li class="li3">&nbsp;我国的猫咪被大家统称为中华田园猫，主要可细分为：橘猫、三花猫、狸花猫、黑猫、白猫、山东狮子猫、四川简州猫、云猫、奶牛猫、玄猫、中国大白猫等等。</li>
+			<li class="li1">&nbsp;<img src="images/tubiao7.png" width="30">国外品种</li>
+			<li class="li4">&nbsp;国外的猫咪品种常见的有：英国短毛猫、英国长毛猫、布偶猫、东方短毛猫、东奇尼猫、俄罗斯蓝猫、孟买猫、缅甸猫、德文郡雷克斯、康沃尔雷克斯、东方猫、苏格兰折耳猫、虎斑猫、曼赤肯猫、金吉拉、波斯猫、红虎斑异国短毛猫、爱琴猫、澳大利亚雾猫、美国短尾猫、美国卷耳猫、美国卷毛猫、美国短毛猫、孟加拉猫、奥西猫等等。</li>
+		</ul>
+	</div>
+	<div class="main5">
+		<table class="t2" >
+		<tr>
+			<td colspan="2" >
+				<img src="images/tbmao8.png" width="100">
+			</td>
+			<td colspan="3" align="left">
+				<font class="show">猫咪展示<br></font>
+				<font class="time">&nbsp;Show&nbsp;Time&nbsp;</font>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="KindShow2.html"><img src="images/buou (2).jpg" width="100" height="100"><br>
+				布偶猫</a>
+			</td>
+			<td>
+				<a href="KindShow2.html"><img src="images/jinjila.jpg" width="100" height="100"><br>
+				金吉拉</a>
+			</td>
+			<td>
+				<a href="KindShow2.html"><img src="images/yingduanlanmao.jpg" width="100" height="100"><br>
+				英短蓝猫</a>
+			</td>
+			<td>
+				<a href="KindShow2.html"><img src="images/miandian.jpg" width="100" height="100"><br>
+				缅甸猫</a>
+			</td>
+			<td>
+				<a href="KindShow2.html"><img src="images/boman.jpg" width="100" height="100"><br>
+				伯曼猫</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="KindShow2.html"><img src="images/bosi.jpg" width="100" height="100"><br>
+				波斯猫</a>
+			</td>
+			<td>
+				<a href="KindShow3.html"><img src="images/meiduan.jpg" width="100" height="100"><br>
+				美短猫</a>
+			</td>
+			<td>
+				<a href="KindShow3.html"><img src="images/jiafei.jpg" width="100" height="100"><br>
+				加菲猫</a>
+			</td>
+			<td>
+				<a href="KindShow3.html"><img src="images/zheer.jpg" width="100" height="100"><br>
+				折耳猫</a>
+			</td>
+			<td>
+				<a href="KindShow3.html"><img src="images/dewenjuanmao.jpg" width="100" height="100"><br>
+				德文卷毛猫</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="KindShow3.html"><img src="images/jumao.jpg" width="100" height="100"><br>
+				橘猫</a>
+			</td>
+			<td>
+				<a href="KindShow3.html"><img src="images/shandongshizi.jpg" width="100" height="100"><br>
+				山东狮子猫</a>
+			</td>
+			<td>
+				<a href="KindShow4.html"><img src="images/lihua.jpg" width="100" height="100"><br>
+				狸花猫</a>
+			</td>
+			<td>
+				<a href="KindShow4.html"><img src="images/baimao.jpg" width="100" height="100"><br>
+				中国白猫</a>
+			</td>
+			<td>
+				<a href="KindShow4.html"><img src="images/sanhua.jpg" width="100" height="100"><br>
+				三花猫</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="KindShow4.html"><img src="images/changmao.jpg" width="100" height="100"><br>
+				长毛猫</a>
+			</td>
+			<td>
+				<a href="KindShow4.html"><img src="images/juaner.jpg" width="100" height="100"><br>
+				卷耳猫</a>
+			</td>
+			<td>
+				<a href="KindShow4.html"><img src="images/wumao.jpg" width="100" height="100"><br>
+				无毛猫</a>
+			</td>
+			<td>
+				<a href="KindShow5.html"><img src="images/mengmai.jpg" width="100" height="100"><br>
+				孟买猫</a>
+			</td>
+			<td>
+				<a href="KindShow5.html"><img src="images/nuoweisenlin.png" width="100" height="100"><br>
+				挪威森林猫</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+	<div class="main6">
+		
+	</div>
+	<div class="main7">
+		<div class="d6">
+			<p class="T"><img src="images/tbmao7.png" width="40">Tips:</p>
+			<p class="wenzi">温馨小提示来了~点击左边图片下方喵喵名称即可详细了解每一只猫猫信息，若想了解更多猫猫种类和看到更多猫猫英姿，请点击下方“更多”方能实现。<br>
+				<a href="KindShow5.html" class="more">更多>></a>
+			</p>
+		</div>
+		<div class="d7">
+			<p class="Q"><img src="images/tubiao9.png" width="40">Search:</p>
+				<form action="" method="post" class="kuang">
+					<input type="search" value="快速搜索" class="sousuo">&nbsp;
+					<input type="submit" value="搜索">
+				</form>
+		</div>
+		<div class="d8">
+			<p class="H"><img src="images/tubiao17.png" width="40">Help:</p>
+			<ul class="u3">
+				<li><a href="#">喵星人与猫的两三事</a></li>
+				<li><a href="#">购猫途径与流程</a></li>
+				<li><a href="#">猫咪小常识</a></li>
+				<li><a href="#">养猫小细节</a></li>
+				<li><a href="#">猫粮大全</a></li>
+				<li><a href="#">选猫技巧</a></li>
+				<li><a href="#">养猫经验</a></li>
+				<li><a href="#">猫咪训练</a></li>
+			</ul>
+		</div>
+	</div>
+	<table class="page" border="1" frame="void" width="300" height="30" cellspacing="10">
+		<tr class="tr1">
+			<td bgcolor="#FFFFFF"><a href="index.html">首页</a></td>
+			<td bgcolor="#FFFFFF"><a href="MaoQiYuan.html">上一页</a></td>
+			<td bgcolor="#FFFFFF"><a href="#">&nbsp;3&nbsp;</a></td>
+			<td bgcolor="#FFFFFF"><a href="KindShow2.html">下一页</a></td>
+			<td bgcolor="#FFFFFF"><a href="Dengru.html">尾页</a></td>
+		</tr>
+	</table>
+</div>
+	<div class="main8">
+		<p class="last">网页底部
+		</p>
+	</div>
+</body>
+</html>

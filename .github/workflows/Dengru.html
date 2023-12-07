@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dengru</title>
+	<style>
+		body{
+				background-color: rgba(158,225,240,0.40);
+				width: 1500px;
+				height: 1000px;
+				position: absolute;
+			margin: auto;
+			left: 0px;
+			right: 0px;
+			}
+		.container{width: 1300px;height: 970px;margin-left: 150px;}
+		.main{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+		}
+		.d1{
+			margin-left: 10px;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			padding-top: 5px;
+		}
+		.d2{
+				width: 210px;
+				height: 55px;
+				font-size: 40px;
+				/*color: antiquewhite;*/
+				font-style: italic;
+				text-shadow: 2px 2px 2px;
+				margin-left: 100px;
+				margin-top: -70px;
+				
+		}
+		.d3{
+			width: 230px;
+			height: 50px;
+			margin-left: 1100px;
+			margin-top: -45px;
+		}
+		.sousuo{
+			font-family: 新宋体;
+			font-size: 16px;
+			text-align: left;
+			line-height: 25px;
+			width: 200px;
+			border: none;
+			float: left;
+		}
+		.main2{
+			width: 1200px;
+			height: 50px;
+			font-weight: bold;
+			line-height: 50px;
+			text-align: center;
+			margin-left: 20px;
+		}
+		.u1{
+			list-style-type: none;
+			position: relative;right: 40px;
+		  }
+		.u1 li{
+			float: left;
+			width: 145px;
+		  }
+		 .u1 li a:link{
+						text-decoration: none;
+						color:black;
+			 			display: block;
+			 			font-family: 仿宋;
+			 			font-size: 25px;
+		             }
+		.u1 li a:hover{
+				background-color:#5096AD;
+				color: aliceblue;
+		}
+		.main3{
+			width: 1200px;
+			height: 550px;
+			background-color: #FEFEFE;
+			background-image:url("images/beijing5.jpg");
+			margin-top: 10px;
+		}
+		.wel{
+			width: 500px;
+			height: 60px;
+			font-family: 楷体;
+			font-size: 35px;
+			margin-left: 80px;
+			position: relative;bottom: 15px;
+		}
+		.touxiang{
+			width: 120px;
+			height: 120px;
+			border-radius: 100%;
+		}
+		.nicheng{width: 150px;height: 50px;font-family: 宋体;font-size: 32px;margin-left: 165px;position: relative;bottom: 100px;}
+		.zhanghao{width: 200px;height: 35px;font-family: 宋体;font-size: 20px;margin-left: 170px;position: relative;bottom: 90px;}
+		.erweima{width: 30px;height: 30px;margin-left: 400px;position: relative;bottom: 130px;}
+		.jianjie{width: 300px;height: 35px;font-family: 宋体;font-size: 20px;position: relative;bottom: 100px;}
+		.xingzuo{width: 85px;height: 35px;font-family: 宋体;font-size: 17px;border-radius: 20px;background-color: aliceblue;line-height: 35px;position: relative;bottom: 100px;}
+		.zhuangtai{width: 85px;height: 35px;font-family: 宋体;font-size: 17px;border-radius: 20px;background-color: aliceblue;line-height: 35px;position: relative;bottom: 135px;margin-left: 100px;}
+		.you{width: 170px;height: 35px;font-family: 宋体;font-size: 17px;border-radius: 20px;background-color: aliceblue;line-height: 35px;position: relative;bottom: 170px;margin-left: 200px;}
+		.guan{width: 40px;height: 50px;position: relative;bottom: 150px;}
+		.fen{width: 40px;height: 50px;position: relative;bottom: 200px; margin-left: 50px;}
+		.zan{width: 40px;height: 50px;position: relative;bottom: 250px;margin-left: 100px;}
+		.bianji{width: 100px;height: 35px;font-family: 宋体;font-size: 17px;border-radius: 20px;background-color: aliceblue;line-height: 35px;position: relative;bottom:  295px;margin-left: 270px;}
+		.bianji a:link{text-decoration: none;color: black;}
+		.bianji a:hover{text-decoration: underline;color:darkblue;}
+		.liuyan{width: 400px;height: 120px;background: #FDFDFD;position: relative;bottom: 260px;border: 1px solid lightblue;box-shadow: inset 3px 5px 3px 2px #54A0B8;}
+		
+		.main4{
+			width: 700px;
+			height: 500px;
+			padding-top: 20px;
+			padding-left: 30px;
+			background-color: rgba(255,255,255,0.5);
+			margin-left: 400px;
+			position: relative;top: 30px;
+		}
+		.ku{width: 130px;
+			height: 150px;
+			position: relative;bottom: 350px;
+			margin-left: 100px;
+			font-family: 宋体;
+			font-size: 20px;
+		}
+		.main5{
+			width: 1200px;
+			height: 300px;
+			background-color: #FBFBFB;
+			/*position: relative;top: 50px;*/
+		}
+		.deng{width: 70px;height: 50px; font-family: 楷体;font-weight: bold;font-size: 35px;}
+		.r1{font-family: 宋体;font-size: 20px;font-weight: bold;}
+		.ru{width: 200px;height: 35px;line-height: 35px;border-radius: 20px;background-color: lightblue;}
+		.ru a:link{
+						text-decoration: none;
+						font-size: 25px;
+						font-weight: bold;
+						font-family: 宋体;
+						color:black;
+					}
+		.ru a:hover{color:aliceblue;}
+		.dengru{
+			margin-left: 500px;
+			position: relative;top: 40px;
+			
+		}
+		.pic{width: 200px;height: 160px;position: relative;bottom: 150px;margin-left: 200px;}
+		
+		.tr1{width: 300px;height: 30px;}
+		.page a:link{text-decoration: none; color: black;}
+		.page a:hover{color: #54A0B8;}
+		.page{
+			width: 300px;
+			height: 30px;
+			margin-left: 980px; 
+			position: relative;top: 54px;
+			text-align: center;
+		}
+		
+		.last{width: 600px;height: 65px;position: relative;left: 450px;}
+		.main6{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid #54A0B8;
+			box-shadow: 3px 5px 3px #54A0B8;
+			position: relative;top: 90px;
+			font-family: 仿宋;
+			font-weight: bold;
+			font-size: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="d1">
+			<img src="images/tbmao5.png" width="70">
+		</div>
+		<div class="d2">
+			喵喵星球网
+		</div>
+		<div class="d3">
+			<form action="#" method="post">
+				<input type="search" value="搜索" class="sousuo">
+				<img src="images/tubiao5.png" width="30" height="30">
+			</form>
+		</div>
+	</div>
+<div class="container">
+	<div class="main2">
+		<ul class="u1">
+			<li><a href="index.html">喵星首页&nbsp;/</a></li>
+			<li><a href="MaoQiYuan.html">猫种起源&nbsp;/</a></li>
+			<li><a href="KindShow.html">种类展示&nbsp;/</a></li>
+			<li><a href="XingTaiTeZheng.html">形态特征&nbsp;/</a></li>
+			<li><a href="ShengHuoXiXing.html">生活习性&nbsp;/</a></li>
+			<li><a href="WeiYang.html">喂养方式&nbsp;/</a></li>
+			<li><a href="ChuShou.html">猫咪出售&nbsp;/</a></li>
+			<li><a href="Zhuce.html">登录注册&nbsp;/</a></li>
+		</ul>
+	</div>
+	<div class="main3">
+		<div class="main4">
+		<div class="wel">
+			Welcome To My Home Page&nbsp;<img src="images/tubiao8.png" width="40">
+		</div>
+		<div class="touxiang">
+			<img src="images/touxiang.jpg" width="100" height="100" class="touxiang">
+		</div>		
+		<div class="nicheng">
+			猫大哥
+		</div>
+		<div class="zhanghao">
+			喵星号：xxxxxxxx
+		</div>
+		<div class="erweima">
+			<img src="images/erweima.png" width="30">
+		</div>			
+		<div class="jianjie">
+			岁月静好，只因有喵！
+		</div>
+		<div class="xingzuo">
+			<img src="images/nv.png" width="20" height="20">天秤座
+		</div>
+		<div class="zhuangtai">
+			&nbsp;＋状态
+		</div>
+		<div class="you">
+			&nbsp;<img src="images/mao9.jpg" width="20" height="20">
+			<img src="images/mao13.jpg" width="20" height="20">
+			<img src="images/mao5.jpg" width="20" height="20">
+			3个朋友
+		</div>
+		<div class="guan">
+			&nbsp;96<br>关注
+		</div>
+		<div class="fen">
+			&nbsp;24<br>粉丝
+		</div>
+		<div class="zan">
+			&nbsp;37<br>获赞
+		</div>
+		<div class="bianji">
+			&nbsp;<a href="#">编辑资料</a>
+		</div>
+		<div class="liuyan">
+			<font face="宋体" size="+2">留言板：</font>
+		</div>
+	</div>
+	<div class="d4">
+		<table class="ku" width="120">
+			<tr>
+				<td>
+					<img src="images/guanzhu.png" width="20">&nbsp;我的关注
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/shoucang.png" width="20">&nbsp;我的收藏
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/dianzan.png" width="20">&nbsp;我的点赞
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/pengyouquan.png" width="20">&nbsp;喵友圈
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/fenxiang.png" width="20">&nbsp;我的分享
+				</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	<div class="main5">
+		<form action="" method="post">
+		<table class="dengru" width="370" height="220" frame="border">
+			<tr>
+				<td colspan="2" class="deng" align="center">
+					用户登录
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="r1">
+					账号：
+				</td>
+				<td>
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="r1">
+					密码：
+				</td>
+				<td>
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="r1">
+					手机号：
+				</td>
+				<td>
+					<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<div class="ru"><a href="Dengru.html">登录</a></div>
+				</td>
+			</tr>
+		</table>
+		</form>
+		<div class="pic">
+			<img src="images/tbmao3.png" width="170" height="170">
+		</div>
+	</div>
+	
+	<table class="page" border="1" frame="void" width="300" height="30" cellspacing="10">
+		<tr class="tr1">
+			<td bgcolor="#FFFFFF"><a href="index.html">首页</a></td>
+			<td bgcolor="#FFFFFF"><a href="Zhuce.html">上一页</a></td>
+			<td bgcolor="#FFFFFF"><a href="Dengru.html">尾页</a></td>
+		</tr>
+	</table>
+</div>
+	<div class="main6">
+		<p class="last">网页底部
+		</p>
+	</div>
+</body>
+</html>

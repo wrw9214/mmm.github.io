@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ChuShou</title>
+	<style type="text/css">
+		body{
+				background-color: rgba(158,225,240,0.40);
+				width: 1500px;
+				height: 1500px;
+				position: absolute;
+			margin: auto;
+			left: 0px;
+			right: 0px;
+			}
+		.container{width: 1300px;height: 1500px;margin-left: 150px;}
+		.main{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid lightblue;
+			box-shadow: 3px 5px 3px #54A0B8;
+		}
+		.d1{
+			margin-left: 10px;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			padding-top: 5px;
+		}
+		.d2{
+				width: 210px;
+				height: 55px;
+				font-size: 40px;
+				/*color: antiquewhite;*/
+				font-style: italic;
+				text-shadow: 2px 2px 2px;
+				margin-left: 100px;
+				margin-top: -70px;
+				
+		}
+		.d3{
+			width: 230px;
+			height: 50px;
+			margin-left: 1100px;
+			margin-top: -45px;
+		}
+		.sousuo{
+			font-family: 新宋体;
+			font-size: 16px;
+			text-align: left;
+			line-height: 25px;
+			width: 200px;
+			border: none;
+			float: left;
+		}
+		.main2{
+			width: 1200px;
+			height: 50px;
+			font-weight: bold;
+			line-height: 50px;
+			text-align: center;
+			margin-left: 20px;
+		}
+		.u1{
+			list-style-type: none;
+			position: relative;right: 40px;
+		  }
+		.u1 li{
+			float: left;
+			width: 145px;
+		  }
+		 .u1 li a:link{
+						text-decoration: none;
+						color:black;
+			 			display: block;
+			 			font-family: 仿宋;
+			 			font-size: 25px;
+		             }
+		.u1 li a:hover{
+				background-color:#5096AD;
+				color: aliceblue;
+		}
+		
+		.main3{
+			width: 1200px;
+			height: 400px;
+			background-image: url("images/mao22.jpg");
+			position: relative;bottom: 25px;
+		}
+		.p1{width: 220px;height: 50px;font-family: 仿宋;font-weight: bold;font-size: 35px;margin-left: 800px;position: relative;top: 100px;}
+		.p2{width: 220px;height: 50px;font-family: 仿宋;font-weight: bold;font-size: 35px;margin-left: 880px;position: relative;top: 80px;}
+		
+		.t1{
+			width:1200px;
+			height: 200px;
+			text-align: center;
+			font-family: 宋体;
+			font-size: 17px;
+			border: medium solid #8C8C8C;
+			box-shadow: inset 3px 5px 3px 2px #54A0B8;
+		}
+		.remen{
+			font-family:宋体;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		select{width: 70px;height: 20px;font-family: 新宋体;font-size: 15px;}
+		
+		.main4{
+			width: 500px;
+			height: 500px;
+			margin-top: 30px;
+			border: 5px solid #07A2BE;
+		}
+		.u2{list-style-type: none;width: 500px;height: 500px;overflow: hidden;}
+		.main5{
+			width: 500px;
+			height: 100px;
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+		.u3{list-style-type: none;width: 500px;height: 100px;}
+		.u3 li{float: left;width: 100px;height: 100px;}
+		.u3 a:link{opacity: 1.0;}
+		.u3 a:hover{opacity: 0.5;}
+		
+		.liucheng{
+			width: 600px;
+			height: 600px;
+			background-color:lightblue;
+			font-family: 楷体;
+			font-size: 15px;
+			margin-left: 600px;
+			margin-top: -625px;
+		}
+		.mz{font-family: 新宋体;font-size: 20px;font-weight: bold;border-bottom: 2px medium #000000;}
+		.d4{
+			width: 1150px;
+			height: 50px;
+			background-color: #54A0B8;
+			margin-top: 20px;
+			position: relative;
+			z-index: 1;
+		}
+		.d5{
+			width: 1150px;
+			height: 50px;
+			margin-top: -60px;
+			margin-left: 50px;
+			background-color: rgba(252,252,252,0.5);
+			position: relative;
+			z-index: 2;
+		}
+		.p3{
+			width: 1150px;
+			height: 30px;
+			text-align: center;
+			font-family: 新宋体;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.p4{
+			width: 200px;
+			height: 20px;
+			font-size: 18px;
+			font-family: 楷体;
+			font-weight: bold;
+			margin-left: 950px;
+			margin-top: -20px;
+		}
+		.p4 a:link{
+			color: black;
+		}
+		.p4 a:hover{color:blue; }
+		
+		.tr1{width: 300px;height: 30px;}
+		.page a:link{text-decoration: none; color: black;}
+		.page a:hover{color: #54A0B8;}
+		.page{
+			width: 300px;
+			height: 30px;
+			margin-left: 980px; 
+			position: relative;top: 40px;
+			text-align: center;
+		}
+		
+		.last{width: 600px;height: 65px;position: relative;left: 450px;}
+		.main6{
+			width: 1500px;
+			height: 80px;
+			background-color:lightblue;
+			border: 1px solid #54A0B8;
+			box-shadow: 3px 5px 3px #54A0B8;
+			position: relative;top: 90px;
+			font-family: 仿宋;
+			font-weight: bold;
+			font-size: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="d1">
+			<img src="images/tbmao5.png" width="70">
+		</div>
+		<div class="d2">
+			喵喵星球网
+		</div>
+		<div class="d3">
+			<form action="#" method="post">
+				<input type="search" value="搜索" class="sousuo">
+				<img src="images/tubiao5.png" width="30" height="30">
+			</form>
+		</div>
+	</div>
+<div class="container">
+	<div class="main2">
+		<ul class="u1">
+			<li><a href="index.html">喵星首页&nbsp;/</a></li>
+			<li><a href="MaoQiYuan.html">猫种起源&nbsp;/</a></li>
+			<li><a href="KindShow.html">种类展示&nbsp;/</a></li>
+			<li><a href="XingTaiTeZheng.html">形态特征&nbsp;/</a></li>
+			<li><a href="ShengHuoXiXing.html">生活习性&nbsp;/</a></li>
+			<li><a href="WeiYang.html">喂养方式&nbsp;/</a></li>
+			<li><a href="ChuShou.html">猫咪出售&nbsp;/</a></li>
+			<li><a href="Zhuce.html">登录注册&nbsp;/</a></li>
+		</ul>
+	</div>
+	
+	<div class="main3">
+		<p class="p1">放心购喵</p>
+		<p class="p2">安心养喵</p>
+	</div>
+	
+		<form action="" method="post">
+		<table class="t1" frame="border">
+			<tr>
+				<td align="right" class="remen">
+					热门种类：
+				</td>
+				<td>
+					布偶猫
+				</td>
+				<td>
+					金吉拉
+				</td>
+				<td>
+					美短猫
+				</td>
+				<td>
+					波斯猫
+				</td>
+				<td>
+					卷耳猫
+				</td>
+				<td>
+					矮脚猫
+				</td>
+				<td>
+					<select>
+						<option>更多</option>
+						<option>英短蓝猫</option>
+						<option>长毛猫</option>
+						<option>加菲猫</option>
+						<option>折耳猫</option>
+						<option>橘猫</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="remen">
+					区域：
+				</td>
+				<td>
+					深圳
+				</td>
+				<td>
+					安徽
+				</td>
+				<td>
+					广东
+				</td>
+				<td>
+					上海
+				</td>
+				<td>
+					江苏
+				</td>
+				<td>
+					北京
+				</td>
+				<td>
+					<select>
+						<option>更多</option>
+						<option>江西</option>
+						<option>澳门</option>
+						<option>重庆</option>
+						<option>福建</option>
+						<option>内蒙古</option>
+						<option>黑龙江</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="remen">
+					价格：
+				</td>
+				<td>
+					1000以内
+				</td>
+				<td>
+					1000-1500元
+				</td>
+				<td>
+					1500-2000元
+				</td>
+				<td>
+					2000-2500元
+				</td>
+				<td>
+					2500-3000元
+				</td>
+				<td>
+					3000-5000元
+				</td>
+				<td>
+					<select>
+						<option>更多</option>
+						<option>5000-5500元</option>
+						<option>5500-6000元</option>
+						<option>6000-6500元</option>
+						<option>6500-7000元</option>
+						<option>7000-8000元</option>
+						<option>8000以上</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" class="remen">
+					月龄：
+				</td>
+				<td>
+					1月龄以内
+				</td>
+				<td>
+					1-2月龄
+				</td>
+				<td>
+					2-3月龄
+				</td>
+				<td>
+					3-4月龄
+				</td>
+				<td>
+					4-5月龄
+				</td>
+				<td>
+					5-6月龄
+				</td>
+				<td>
+					<select>
+						<option>更多</option>
+						<option>6-7月龄</option>
+						<option>7月龄以上</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		</form>
+	<div class="main4">
+		<ul class="u2">
+			<li><a name="q3"><img src="images/mao9.jpg" width="500"></a></li>
+			<li><a name="q1"><img src="images/buou.jpg" width="500"></a></li>
+			<li><a name="q2"><img src="images/dewenjuanmao2.jpg" width="500"></a></li>
+			<li><a name="q4"><img src="images/bosi2.jpg" width="500"></a></li>
+			<li><a name="q5"><img src="images/yingduan2.jpg" width="500"></a></li>
+		</ul>
+	</div>
+	<div class="main5">
+		<ul class="u3">
+			<li><a href="#q3"><img src="images/mao9.jpg" width="100"></a></li>
+			<li><a href="#q1"><img src="images/buou.jpg" width="100"></a></li>
+			<li><a href="#q2"><img src="images/dewenjuanmao2.jpg" width="100"></a></li>
+			<li><a href="#q4"><img src="images/bosi2.jpg" width="100"></a></li>
+			<li><a href="#q5"><img src="images/yingduan2.jpg" width="100"></a></li>
+		</ul>
+	</div>
+	<table class="liucheng" cellpadding="5" rules="rows" frame="above" border="2">
+		<tr>
+			<td class="mz">
+				购猫流程<img src="images/tubiao23.png" width="40">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				1.挑选猫咪：如需购买猫咪，可在本站相册查看最新猫咪信息，我们有专人每天更新猫咪信息，若相中心仪猫咪，我们会提供照片和视频供预览。<br>
+				2.支付定金：询问查看各项信息后，如若确定下来所购买猫咪，则可在平台支付定金，约猫咪总价格的三分之一。<br>
+				3.等待猫咪满月，预约接猫时间：确认支付定金后，我们会照看猫咪直至满月，然后可预约接猫时间。<br>
+				4.支付全额：本站最独有的特点是支持买家收到猫一周后无任何问题再支付全额基金。
+			</td>
+		</tr>
+		<tr>
+			<td class="mz">
+				注意事项<img src="images/tubiao23.png" width="40">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				1.猫咪尾巴是否过短；尾巴、足爪及背脊是否畸形；四肢是否过短。<br>
+				2.观察小猫咪是否有活力，动作是否灵活，身体是否健康。<br>
+				3.查检下腹是否过瘦或异常肿大；检查皮毛有无发霉，或有怪味；检查覆毛内层是否存在寄生虫或黑色一点一点的虫便便。<br>
+				4.检查眼睛是否易流泪，或有眼疾；检查耳朵是否有耳庎虫；检查口部咬合是否正常，无臭味。<br>
+				5.检查鼻子是否微湿，呼吸是否顺畅无杂音；检查屁屁是否干净；确定是否已喂服驱虫药。<br>
+				6.是否有宠物手册或相关资料，以证明打过五合一疫苗，并在3-4周后再打一剂五合一，往后每三年追加注射疫苗。<br>
+				7.询问猫咪的个性。若号称血统猫咪，则必须具备CFA等公信力爱猫咪协会所开具的出生证明(蓝单)，或注册证明(绿单)。
+			</td>
+		</tr>
+		<tr>
+			<td class="mz">
+				照看事项<img src="images/tubiao23.png" width="40">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				1.喂食和水。猫咪每天都需要进食，这是很正常的，但是猫咪一天不能吃太多食物，吃的过多的话，可能会导致猫咪出现消化不良，呕吐，腹泻这些情况。<br>
+				2.洗澡。猫咪天生就是很怕水的，所以它们都不喜欢洗澡。但本身猫咪是比较爱干净的，而且每天还会自己舔毛，猫咪舔毛的过程其实能杀死一部分细菌和病菌，因为猫咪唾液里含有大量的溶菌酶。正常情况下猫咪2到3个月洗一次澡已经足够。<br>
+				3.窝。其实猫咪不需要专门的窝，只需要给它准备一个大点的纸箱，然后在纸箱底部放一些毛绒的毯子或者垫子就好，保证猫咪睡觉的地方的暖和性就好，温暖舒适的地方，猫咪会睡的更香。
+			</td>
+		</tr>
+	</table>	
+	<div class="d4">
+	</div>
+	<div class="d5">
+		<p class="p3">
+			亲爱的顾客您好，在浏览本页后，您既可以选择购买您所心仪的猫咪，也可以选择领养一只小可爱回家，具体详情请点击下方链接。
+		</p>
+		<p class="p4">
+			<a href="ChuShou2.html">选择购买</a>&nbsp;&nbsp;<a href="LingYang.html">选择领养</a>
+		</p>			
+	</div>
+	
+	<table class="page" border="1" frame="void" width="300" height="30" cellspacing="10">
+		<tr class="tr1">
+			<td bgcolor="#FFFFFF"><a href="index.html">首页</a></td>
+			<td bgcolor="#FFFFFF"><a href="WeiYang.html">上一页</a></td>
+			<td bgcolor="#FFFFFF"><a href="#">&nbsp;11&nbsp;</a></td>
+			<td bgcolor="#FFFFFF"><a href="ChuShou2.html">下一页</a></td>
+			<td bgcolor="#FFFFFF"><a href="Dengru.html">尾页</a></td>
+		</tr>
+	</table>
+</div>
+	<div class="main6">
+		<p class="last">网页底部
+		</p>
+	</div>
+</body>
+</html>
